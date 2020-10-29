@@ -5,18 +5,27 @@
 .random {
   width: 100px;
   height: 100px;
-  margin: 20px auto;
+  margin: 30px auto;
   background: #00a7da;
   border-radius: 50%;
   text-align: center;
   line-height: 100px;
+  font-weight: bold;
   /* テキストが2行以上とかの時は以下で上下中央に操作できる？ */
   /* position: absolute;
   top: 50%;
   transform: translateY(-50%); */
   color: rgb(235, 235, 235);
+  box-shadow: 0 8px 0 #0084ac;
+  user-select: none;
 }
 
-:hover .random {
+.random:hover {
   cursor: pointer;
+  opacity: 0.8;
+}
+
+.random:active {
+  box-shadow: 0 4px 0 #0084ac;
+  margin-top: 35px;
 }
